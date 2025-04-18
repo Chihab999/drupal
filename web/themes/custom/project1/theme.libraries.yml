@@ -1,0 +1,9 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/style.css: { weight: 0 }
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery

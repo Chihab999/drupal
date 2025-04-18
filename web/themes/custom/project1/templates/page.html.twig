@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head-placeholder token="{{ placeholder_token|raw }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token|raw }}">
+    <js-placeholder token="{{ placeholder_token|raw }}">
+  </head>
+  <body>
+    {{ attach_library('theme/global-styling') }}
+
+    <header class="navbar">
+      <div class="logo">DataSense</div>
+      <nav class="nav-links">
+        <a href="/drupal/web/">Home</a>
+        <a href="/drupal/web/services">Services</a>
+        <a href="/drupal/web/about">About</a>
+        <a href="/drupal/web/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      {{ page.content }}
+    </main>
+
+    <footer>
+      {{ page.footer }}
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+{# themes/theme1/templates/page--contact.html.twig #}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head-placeholder token="{{ placeholder_token|raw }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token|raw }}">
+    <js-placeholder token="{{ placeholder_token|raw }}">
+  </head>
+  {{ attach_library('theme1/global-styling') }}
+  <body>
+
+    <!-- Header -->
+    <header class="navbar">
+      <div class="logo">DataSense contact</div>
+      <nav class="nav-links">
+        <a href="/drupal/web/">Home</a>
+        <a href="/drupal/web/services">Services</a>
+        <a href="/drupal/web/about">About</a>
+      </nav>
+      <div class="menu-toggle">&#9776;</div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you. Please fill out the form below:</p>
+
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <input type="text" id="subject" placeholder="Subject" required />
+          <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <p><strong>Email:</strong> contact@datasense.com</p>
+          <p><strong>Phone:</strong> +1 234 567 890</p>
+          <p><strong>Address:</strong> 123 Data Lane, Analytics City</p>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

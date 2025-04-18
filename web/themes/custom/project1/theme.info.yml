@@ -1,0 +1,12 @@
+name: 'My Theme test'
+type: theme
+description: 'A custom theme based on a static HTML template.'
+core_version_requirement: ^11
+base theme: stable
+package: Custom
+libraries:
+  - theme/global-styling
+regions:
+  header: Header
+  content: Content
+  footer: Footer
